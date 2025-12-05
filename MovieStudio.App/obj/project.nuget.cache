@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jq6TBTSI+mg=",
+  "success": true,
+  "projectFilePath": "C:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.App\\MovieStudio.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\torba\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.8\\microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
+    "C:\\Users\\torba\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
