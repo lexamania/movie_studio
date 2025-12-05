@@ -33,6 +33,16 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "MovieStudio.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/MovieStudio.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieStudio.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -67,11 +77,17 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "MovieStudio.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../MovieStudio.Infrastructure/MovieStudio.Infrastructure.csproj",
+      "msbuildProject": "../MovieStudio.Infrastructure/MovieStudio.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Microsoft.AspNetCore.OpenApi >= 9.0.8"
+      "Microsoft.AspNetCore.OpenApi >= 9.0.8",
+      "MovieStudio.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -98,7 +114,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.Infrastructure\\MovieStudio.Infrastructure.csproj": {
+              "projectPath": "C:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.Infrastructure\\MovieStudio.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
