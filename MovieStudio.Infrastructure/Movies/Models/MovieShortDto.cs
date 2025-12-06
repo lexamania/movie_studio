@@ -1,6 +1,6 @@
 namespace MovieStudio.Infrastructure.Movies.Models;
 
-public class MovieShortDto(
+public record MovieShortDto(
     string Id,
     string Title,
     string Description,

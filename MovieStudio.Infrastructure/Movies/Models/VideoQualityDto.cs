@@ -1,6 +1,6 @@
 namespace MovieStudio.Infrastructure.Movies.Models;
 
-public class VideoQualityDto(
+public record VideoQualityDto(
     string VideoQuality,
     string VideoLink
 );

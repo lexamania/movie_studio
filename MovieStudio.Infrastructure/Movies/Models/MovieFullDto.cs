@@ -1,6 +1,6 @@
 namespace MovieStudio.Infrastructure.Movies.Models;
 
-public class MovieFullDto(
+public record MovieFullDto(
     string Id,
     string Title,
     string Description,

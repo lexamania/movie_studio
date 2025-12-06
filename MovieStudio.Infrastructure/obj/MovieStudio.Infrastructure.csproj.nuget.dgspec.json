@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.Infrastructure\\MovieStudio.Infrastructure.csproj": {}
+    "c:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.Infrastructure\\MovieStudio.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.Infrastructure\\MovieStudio.Infrastructure.csproj": {
+    "c:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.Infrastructure\\MovieStudio.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.Infrastructure\\MovieStudio.Infrastructure.csproj",
+        "projectUniqueName": "c:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.Infrastructure\\MovieStudio.Infrastructure.csproj",
         "projectName": "MovieStudio.Infrastructure",
-        "projectPath": "C:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.Infrastructure\\MovieStudio.Infrastructure.csproj",
+        "projectPath": "c:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.Infrastructure\\MovieStudio.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\torba\\.nuget\\packages\\",
-        "outputPath": "C:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.Infrastructure\\obj\\",
+        "outputPath": "c:\\Lexamania\\Development\\program-creation\\MovieStudio\\movie_studio\\MovieStudio.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\torba\\AppData\\Roaming\\NuGet\\NuGet.Config"
