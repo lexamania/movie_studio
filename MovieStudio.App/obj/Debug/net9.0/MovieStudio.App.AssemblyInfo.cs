@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MovieStudio.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0839286edab5f03359c23fba073c7f556a72f73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5a0dba67191e56c62cf74e43c07f630a5d29990")]
 [assembly: System.Reflection.AssemblyProductAttribute("MovieStudio.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MovieStudio.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
