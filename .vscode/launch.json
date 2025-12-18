@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "C#: MovieStudio.App Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/MovieStudio.App/MovieStudio.App.csproj"
+        },
+        {
             "name": "C#: LocalStorage Debug",
             "type": "dotnet",
             "request": "launch",
