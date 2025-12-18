@@ -4,10 +4,17 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Folder Name="/MovieStudio.Libs/">
-    <Project Path="MovieStudio.Libs/LocalMovieStorage/LocalMovieStorage.csproj" />
+  <Folder Name="/src/">
+    <Folder Name="/Services/">
+        <Folder Name="/MovieStudio.LocalMovies/">
+            <Project Path="LocalMovies.Api/LocalMovies.Api.csproj" />
+            <Project Path="LocalMovies.Application/LocalMovies.Application.csproj" />
+            <Project Path="LocalMovies.Infrastructure/LocalMovies.Infrastructure.csproj" />
+        </Folder>
+    </Folder>
+    <Folder Name="/Shared/">
+        <Project Path="MovieStudio.Application/MovieStudio.Application.csproj" />
+        <Project Path="MovieStudio.Domain/MovieStudio.Domain.csproj" />
+    </Folder>
   </Folder>
-  <Project Path="MovieStudio.App/MovieStudio.App.csproj" />
-  <Project Path="MovieStudio.Auth/MovieStudio.Auth.csproj" />
-  <Project Path="MovieStudio.Infrastructure/MovieStudio.Infrastructure.csproj" />
 </Solution>
