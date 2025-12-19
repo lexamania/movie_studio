@@ -1,20 +1,17 @@
 <Solution>
-  <Configurations>
-    <Platform Name="Any CPU" />
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Folder Name="/src/">
-    <Folder Name="/Services/">
-        <Folder Name="/MovieStudio.LocalMovies/">
-            <Project Path="LocalMovies.Api/LocalMovies.Api.csproj" />
-            <Project Path="LocalMovies.Application/LocalMovies.Application.csproj" />
-            <Project Path="LocalMovies.Infrastructure/LocalMovies.Infrastructure.csproj" />
-        </Folder>
+    <Configurations>
+        <Platform Name="Any CPU"/>
+        <Platform Name="x64"/>
+        <Platform Name="x86"/>
+    </Configurations>
+    <Folder Name="/src/"/>
+    <Folder Name="/src/Services/"/>
+    <Folder Name="/src/Services/MovieStudio.LocalMovies/">
+        <Project Path="src/Services/MovieStudio.LocalMovies/LocalMovies.Api/LocalMovies.Api.csproj"/>
+        <Project Path="src/Services/MovieStudio.LocalMovies/LocalMovies.Infrastructure/LocalMovies.Infrastructure.csproj"/>
     </Folder>
-    <Folder Name="/Shared/">
-        <Project Path="MovieStudio.Application/MovieStudio.Application.csproj" />
-        <Project Path="MovieStudio.Domain/MovieStudio.Domain.csproj" />
+    <Folder Name="/src/Shared/">
+        <Project Path="src/Shared/MovieStudio.Application/MovieStudio.Application.csproj"/>
+        <Project Path="src/Shared/MovieStudio.Domain/MovieStudio.Domain.csproj"/>
     </Folder>
-  </Folder>
 </Solution>

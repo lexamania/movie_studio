@@ -5,17 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C#: MovieStudio.Application Debug",
+            "name": "LocalMovies Debug",
             "type": "dotnet",
             "request": "launch",
-            "projectPath": "${workspaceFolder}/MovieStudio.Application/MovieStudio.Application.csproj"
+            "projectPath": "${workspaceFolder}/src/Services/MovieStudio.LocalMovies/LocalMovies.Api/LocalMovies.Api.csproj"
         },
-        {
-            "name": "C#: LocalStorage Debug",
-            "type": "dotnet",
-            "request": "launch",
-            "projectPath": "${workspaceFolder}/MovieStudio.Libs/LocalMoviesService/LocalMoviesService.csproj"
-        }
-
     ]
 }

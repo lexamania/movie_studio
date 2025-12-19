@@ -5,8 +5,9 @@ root = true
 indent_style = space
 
 # Xml files
-[*.{xml, slnx}]
+[*.{xml,slnx,csproj,vbproj,props,targets}]
 indent_size = 2
+tab_width = 2
 
 # C# files
 [*.cs]
