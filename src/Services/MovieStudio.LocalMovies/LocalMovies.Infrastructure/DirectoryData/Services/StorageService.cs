@@ -39,19 +39,19 @@ public class StorageService
     public IReadOnlyCollection<DirectoryInfoModel> GetDirectories()
         => _directories.AsReadOnly();
 
-    public void AddDirectory(string dirPath, string caption, bool containsInner)
+    public void AddDirectory(string dirPath, string caption, bool includeInner)
     {
         if (_directories.Any(x => x.Directory.Path.Equals(dirPath)))
             return;
 
-        var dir = new DirectoryEntity(dirPath, caption, containsInner);
+        var dir = new DirectoryEntity(dirPath, caption, includeInner);
         _parser.SaveRecords(_filePath, [dir]);
         _directories.Add(GetDirectoryInfo(dir));
     }
 
-    public void RemoveDirectory(string dirPath)
+    public void RemoveDirectory(string id)
     {
-        var dirInfo = _directories.FirstOrDefault(x => x.Directory.Path.Equals(dirPath));
+        var dirInfo = _directories.FirstOrDefault(x => x.Directory.Id.Equals(id));
         if (dirInfo is null)
             return;
 
@@ -61,7 +61,7 @@ public class StorageService
 
     private DirectoryInfoModel GetDirectoryInfo(DirectoryEntity dir)
     {
-        var searchOption = dir.ContainsInner
+        var searchOption = dir.IncludeInner
             ? SearchOption.AllDirectories
             : SearchOption.TopDirectoryOnly;
 

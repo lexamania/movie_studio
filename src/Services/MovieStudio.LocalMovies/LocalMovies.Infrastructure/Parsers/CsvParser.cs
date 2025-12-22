@@ -63,7 +63,7 @@ public class CsvParser : IFileParser
         using var stream = new StreamReader(filePath);
         using var csvStream = new CsvReader(stream, _culture);
 
-        foreach(var record in csvStream.GetRecords<T>())
+        foreach (var record in csvStream.GetRecords<T>())
         {
             if (obj.Equals(record))
                 return true;
@@ -76,21 +76,23 @@ public class CsvParser : IFileParser
     {
         var tempPath = Path.Join(Path.GetDirectoryName(filePath), $"{Path.GetRandomFileName()}{Extension}");
 
-        using var streamR = new StreamReader(filePath);
-        using var csvStreamR = new CsvReader(streamR, _culture);
-        using var streamW = new StreamWriter(tempPath);
-        using var csvStreamW = new CsvWriter(streamW, _culture);
-
-        csvStreamW.WriteHeader<T>();
-        csvStreamW.NextRecord();
-
-        foreach(var record in csvStreamR.GetRecords<T>())
+        using (var streamR = new StreamReader(filePath))
+        using (var csvStreamR = new CsvReader(streamR, _culture))
+        using (var streamW = new StreamWriter(tempPath))
+        using (var csvStreamW = new CsvWriter(streamW, _culture))
         {
-            if (objs.Contains(record))
-                continue;
 
-            csvStreamW.WriteRecord(record);
+            csvStreamW.WriteHeader<T>();
             csvStreamW.NextRecord();
+
+            foreach (var record in csvStreamR.GetRecords<T>())
+            {
+                if (objs.Contains(record))
+                    continue;
+
+                csvStreamW.WriteRecord(record);
+                csvStreamW.NextRecord();
+            }
         }
 
         File.Delete(filePath);

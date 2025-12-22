@@ -3,9 +3,11 @@
     <TargetFramework>net9.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\MovieStudio.Application\MovieStudio.Application.csproj"/>
+    <ProjectReference Include="..\..\..\Shared\MovieStudio.Domain\MovieStudio.Domain.csproj"/>
     <ProjectReference Include="..\LocalMovies.Infrastructure\LocalMovies.Infrastructure.csproj"/>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="14.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.0"/>
   </ItemGroup>
 </Project>
