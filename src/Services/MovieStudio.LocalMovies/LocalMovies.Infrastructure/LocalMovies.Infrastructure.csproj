@@ -3,8 +3,11 @@
         <TargetFramework>net9.0</TargetFramework>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="LiteDB" Version="5.0.21"/>
-        <PackageReference Include="CSVHelper" Version="33.1.0" />
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.1" />
+        <PackageReference Include="LiteDB" />
+        <PackageReference Include="CSVHelper" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="../../../Shared/MovieStudio.Domain/MovieStudio.Domain.csproj" />
     </ItemGroup>
 </Project>

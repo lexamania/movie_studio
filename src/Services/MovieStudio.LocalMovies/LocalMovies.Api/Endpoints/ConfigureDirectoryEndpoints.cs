@@ -28,7 +28,7 @@ public static class ConfigureDirectoryEndpoints
 
     public static async Task<IResult> AddDirectory([FromBody] NewDirectoryModel model, IMediator mediator)
     {
-        var result = await mediator.Send(new AddDirectoryCommand(model.DirectoryPath, model.Caption, model.IncludeInner));
+        await mediator.Send(new AddDirectoryCommand(model.DirectoryPath, model.Caption, model.IncludeInner));
         return Results.Created();
     }
 
