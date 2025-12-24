@@ -1,8 +1,8 @@
 using LocalMovies.Infrastructure.Services;
 
-using MovieStudio.Application.DTOs;
-using MovieStudio.Application.Queries;
-using MovieStudio.Application.Queries.Handlers;
+using MovieStudio.Shared.Application.DTOs;
+using MovieStudio.Shared.Application.Queries;
+using MovieStudio.Shared.Application.Queries.Handlers;
 
 namespace LocalMovies.Api.Application.Queries;
 

@@ -1,14 +1,14 @@
 using LocalMovies.Infrastructure.Services;
 
+using MediatR;
+
 using MovieStudio.Shared.Application.DTOs;
-using MovieStudio.Shared.Application.Queries;
-using MovieStudio.Shared.Application.Queries.Handlers;
 
-namespace LocalMovies.Api.Application.Queries;
+namespace LocalMovies.Server.Api.Application.Queries;
 
-public class GetCategoriesHandler(StorageService storage) : IGetCategoriesHandler
+public class GetDirectoriesHandler(StorageService storage) : IRequestHandler<GetDirectoriesQuery, List<CategoryDto>>
 {
-    public Task<List<CategoryDto>> Handle(GetCategoriesQuery request, CancellationToken cancellationToken)
+    public Task<List<CategoryDto>> Handle(GetDirectoriesQuery request, CancellationToken cancellationToken)
     {
         var dirs = storage.GetDirectories();
         var categories = dirs.Select(x => new CategoryDto()

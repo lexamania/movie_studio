@@ -1,4 +1,4 @@
-using LocalMovies.Api.Endpoints;
+using LocalMovies.Server.Api.Endpoints;
 using LocalMovies.Infrastructure.Configurations;
 using LocalMovies.Infrastructure.Helpers;
 
@@ -6,7 +6,6 @@ using MovieStudio.Shared.Application.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure logging
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 builder.Logging.SetMinimumLevel(LogLevel.Information);
@@ -14,7 +13,6 @@ builder.Logging.SetMinimumLevel(LogLevel.Information);
 var workingDir = Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MovieStudio");
 DirectoryHelper.CreateDirectoryIfNeed(workingDir);
 
-// Add shared application services (CQRS, validation, logging)
 builder.Services.AddMediatRExtended();
 builder.Services.AddLocalServices(new ()
 {
@@ -36,6 +34,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapEndpoints();
+app.MapDirectoryEndpoints();
 
 app.Run();

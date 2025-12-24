@@ -5,7 +5,7 @@
 ```
 src/
 ├── Shared/
-│   ├── MovieStudio.Application/     # CQRS Application Layer
+│   ├── MovieStudio.Shared.Application/     # CQRS Application Layer
 │   │   ├── Behaviors/               # MediatR pipeline behaviors
 │   │   ├── Commands/                # CQRS Commands
 │   │   ├── Queries/                 # CQRS Queries
@@ -13,7 +13,7 @@ src/
 │   │   ├── DTOs/                    # Data transfer objects
 │   │   └── Handlers/                # Handler interfaces
 │   │
-│   └── MovieStudio.Domain/          # Domain Layer
+│   └── MovieStudio.Shared.Domain/          # Domain Layer
 │       ├── Models/                  # Domain entities
 │       ├── Events/                  # Domain events
 │       ├── Exceptions/              # Custom exceptions
@@ -233,7 +233,7 @@ info: LoggingBehavior[0]
 
 1. **Create the command:**
 ```csharp
-// src/Shared/MovieStudio.Application/Commands/MyNewCommand.cs
+// src/Shared/MovieStudio.Shared.Application/Commands/MyNewCommand.cs
 public record MyNewCommand(string Property) : IRequest<bool>;
 ```
 
@@ -338,7 +338,7 @@ public static async Task<IResult> GetMyResource(
 
 1. **Create the event:**
 ```csharp
-// src/Shared/MovieStudio.Domain/Events/MyEvent.cs
+// src/Shared/MovieStudio.Shared.Domain/Events/MyEvent.cs
 public class MyEvent : DomainEvent
 {
     public string MyProperty { get; set; }
@@ -440,9 +440,9 @@ builder.Logging.AddConsole();
 ### Log Request/Response
 Already done via `LoggingBehavior`! You'll see:
 ```
-info: MovieStudio.Application.Behaviors.LoggingBehavior[0]
+info: MovieStudio.Shared.Application.Behaviors.LoggingBehavior[0]
       Executing AddDirectoryCommand
-info: MovieStudio.Application.Behaviors.LoggingBehavior[0]
+info: MovieStudio.Shared.Application.Behaviors.LoggingBehavior[0]
       Completed AddDirectoryCommand
 ```
 

@@ -2,8 +2,8 @@ using MediatR;
 
 using Microsoft.AspNetCore.Mvc;
 
-using MovieStudio.Application.Queries;
-using MovieStudio.Domain.Models;
+using MovieStudio.Shared.Application.Queries;
+using MovieStudio.Shared.Domain.Models;
 
 namespace LocalMovies.Api.Endpoints;
 

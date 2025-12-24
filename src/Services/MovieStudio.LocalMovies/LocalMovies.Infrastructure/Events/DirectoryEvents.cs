@@ -1,4 +1,4 @@
-using MovieStudio.Domain.Events;
+using MovieStudio.Shared.Domain.Events;
 
 namespace LocalMovies.Infrastructure.Events;
 

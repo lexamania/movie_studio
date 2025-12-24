@@ -13,8 +13,8 @@ src/
 │   ├── MovieStudio.HBO/            # HBO movies service
 │   └── MovieStudio.Netflix/        # Netflix movies service
 └── Shared/                      # Shared libraries
-    ├── MovieStudio.Application    # CQRS handlers, validators, behaviors
-    └── MovieStudio.Domain         # Domain models, interfaces, events
+    ├── MovieStudio.Shared.Application    # CQRS handlers, validators, behaviors
+    └── MovieStudio.Shared.Domain         # Domain models, interfaces, events
 ```
 
 ## Key Patterns Implemented
@@ -59,7 +59,7 @@ Request → LoggingBehavior → ValidationBehavior → Handler → Response
 
 ### 2. Domain-Driven Design (DDD)
 
-**Domain Layer (`MovieStudio.Domain`):**
+**Domain Layer (`MovieStudio.Shared.Domain`):**
 - `Models/` - Domain entities and value objects
 - `Interfaces/` - Domain abstractions
 - `Extensions/` - Domain logic extensions

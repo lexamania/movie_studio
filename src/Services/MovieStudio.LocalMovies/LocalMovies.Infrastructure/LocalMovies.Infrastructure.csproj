@@ -8,6 +8,6 @@
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="../../../Shared/MovieStudio.Domain/MovieStudio.Domain.csproj" />
+      <ProjectReference Include="../../../Shared/MovieStudio.Shared.Domain/MovieStudio.Shared.Domain.csproj" />
     </ItemGroup>
 </Project>

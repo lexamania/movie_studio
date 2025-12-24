@@ -8,10 +8,11 @@
     <Folder Name="/src/Services/"/>
     <Folder Name="/src/Services/MovieStudio.LocalMovies/">
         <Project Path="src/Services/MovieStudio.LocalMovies/LocalMovies.Api/LocalMovies.Api.csproj"/>
+        <Project Path="src/Services/MovieStudio.LocalMovies/LocalMovies.Server.Api/LocalMovies.Server.Api.csproj"/>
         <Project Path="src/Services/MovieStudio.LocalMovies/LocalMovies.Infrastructure/LocalMovies.Infrastructure.csproj"/>
     </Folder>
     <Folder Name="/src/Shared/">
-        <Project Path="src/Shared/MovieStudio.Application/MovieStudio.Application.csproj"/>
-        <Project Path="src/Shared/MovieStudio.Domain/MovieStudio.Domain.csproj"/>
+        <Project Path="src/Shared/MovieStudio.Shared.Application/MovieStudio.Shared.Application.csproj"/>
+        <Project Path="src/Shared/MovieStudio.Shared.Domain/MovieStudio.Shared.Domain.csproj"/>
     </Folder>
 </Solution>
